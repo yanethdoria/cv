@@ -1,0 +1,157 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* Paleta de Colores */
+:root {
+  --main-color: #F8F7FF;
+  --durazno: #ffa585;
+  --amarillo: #ffeda0;
+  --melocoton: #fa9372;
+  --negro: #100F0F;
+  --sombra1: #45454D;
+  --sombra2: #3C3D47;
+}
+
+/* Fondo de la web*/
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: linear-gradient(30deg, var(--durazno) 50%, var(--amarillo) 90%);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor del CV */
+.main {
+  height: 1150px;
+  width: 800px;
+  background-color: var(--main-color);
+  box-shadow: 5px 7px 20px 3px var(--sombra1);
+  margin: 20px auto;
+}
+
+/* Fondo de Encabezado */
+.top-section {
+  background-color: var(--melocoton);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Imagen de Perfil */
+.profile {
+  width: 150px;
+  border: 5px dashed var(--main-color);
+  border-radius: 50%;
+}
+.profile:hover {
+  transform:scale(1.1);
+}
+
+/* Texto de Encabezados */
+.head {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Abril Fatface', serif;
+  color: var(--negro);
+}
+.head:hover {
+  border-bottom: 3px dashed;
+  background: var(--amarillo);
+}
+.p1 {
+  color: var(--main-color);
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0px;
+  margin-top: 10px;
+}
+.p1 span {
+  font-weight: 100;
+}
+.p2 {
+  font-size: 20px;
+  color: var(--amarillo);
+  margin: 0px;
+  margin-top: 10px;
+}
+.p3 {
+  color: var(--sombra2);
+  margin-bottom: -5px;
+
+}
+.p-4 {
+  font-size: 14px;
+  color: var(--sombra2);
+}
+
+/* Columna Izquierda */
+.col-div-4 {
+  width: 35%;
+  float: left;
+
+}
+.col-div-8 {
+  width: 62%;
+  float: left;
+}
+
+/* Separador de Columnas */
+.line{
+  border-left: 4px dashed var(--durazno);
+  height: 760px;
+  width: 2%;
+  margin-top: 30px;
+  float:left;
+}
+
+/* Margenes */
+.content-box{
+  padding: 20px;
+}
+
+/* Iconos */
+.fa{
+  color: var(--melocoton);
+}
+.fa:hover{
+  color: var(--amarillo);
+}
+
+/* Listas */
+.skills{
+  list-style-type: circle;
+  margin-left: -20px;
+  margin-bottom: 0px;
+}
+.skills li{
+  padding: 5px;
+}
+.skills li span{
+  color: var(--sombra1);
+}
+
+/* Enlaces */
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+a:link {
+  color: var(--negro);
+}
+a:visited {
+  color: var(--negro);
+}
+a:focus {
+   border-bottom: 1px solid;
+   background: var(--amarillo);
+}
+a:hover {
+  border-bottom: 1px solid;
+  background: var(--durazno);
+}
+a:active {
+  background: var(--negro);
+  color: var(--amarillo);
+}
